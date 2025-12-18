@@ -1,0 +1,6 @@
+student_id,name,grade,subject,passed
+101,Alice,85,Math,True
+102,Bob,92,Math,True
+103,Charlie,78,Physics,False
+104,David,95,Physics,True
+105,Eve,88,Chemistry,True
