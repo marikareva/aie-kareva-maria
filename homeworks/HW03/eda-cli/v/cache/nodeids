@@ -1,0 +1,12 @@
+[
+  "tests/test_core.py::test_correlation_and_top_categories",
+  "tests/test_core.py::test_hw03_additional_heuristic",
+  "tests/test_core.py::test_hw03_cli_parameters",
+  "tests/test_core.py::test_hw03_constant_column",
+  "tests/test_core.py::test_hw03_example_csv",
+  "tests/test_core.py::test_hw03_high_cardinality",
+  "tests/test_core.py::test_hw03_no_issues",
+  "tests/test_core.py::test_hw03_quality_flags_comprehensive",
+  "tests/test_core.py::test_missing_table_and_quality_flags",
+  "tests/test_core.py::test_summarize_dataset_basic"
+]
