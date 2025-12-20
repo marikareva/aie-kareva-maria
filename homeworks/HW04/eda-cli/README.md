@@ -63,8 +63,9 @@ uv run pytest -q
 
 ```bash
 uv run eda-cli report data.csv --title "Мой анализ" --top-k-categories 15 --min-missing-share 0.2 --max-hist-columns 10 --out-dir my_report
+```
 
-### 4. Quality flags from CSV (НОВЫЙ для HW04)
+## 4. Quality flags from CSV (для HW04)
 
 `POST /quality-flags-from-csv`
 Полный набор флагов качества, включая эвристики из HW03:
@@ -72,10 +73,10 @@ uv run eda-cli report data.csv --title "Мой анализ" --top-k-categories 
 - `has_constant_columns` - обнаружение колонок с одним значением
 - `has_high_cardinality_categoricals` - обнаружение категориальных колонок с >50 уникальных значений
 
-**Параметры:**
+Параметры:
 - `file` (multipart/form-data): CSV файл для анализа
 
-**Ответ:**
+Ответ:
 
 ```json
 {
@@ -87,3 +88,4 @@ uv run eda-cli report data.csv --title "Мой анализ" --top-k-categories 
     "has_high_cardinality_categoricals": bool
   }
 }
+```
