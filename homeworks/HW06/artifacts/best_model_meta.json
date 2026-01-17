@@ -1,0 +1,16 @@
+{
+  "best_model": "RandomForest",
+  "roc_auc": 0.9696805647250012,
+  "parameters": {
+    "max_depth": null,
+    "max_features": "sqrt",
+    "n_estimators": 100
+  },
+  "test_metrics": {
+    "accuracy": 0.9306666666666666,
+    "f1": 0.8878101402373247,
+    "roc_auc": 0.9696805647250012
+  },
+  "date": "2026-01-16T15:44:50.154040",
+  "dataset": "S06-hw-dataset-01.csv"
+}
