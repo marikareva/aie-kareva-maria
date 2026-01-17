@@ -1,0 +1,47 @@
+{
+  "dataset_01": {
+    "best_algorithm": "KMeans",
+    "best_algorithm_explanation": "KMeans показал значительно лучшие метрики по всем показателям: Silhouette (0.522 vs 0.383), Davies-Bouldin (0.685 vs 3.042) и Calinski-Harabasz (11787 vs 7066). DBSCAN имел проблемы с разделением кластеров.",
+    "parameters": {
+      "n_clusters": 2,
+      "random_state": 42,
+      "n_init": 10
+    },
+    "selection_criteria": "Максимальный Silhouette Score (0.522) и минимальный Davies-Bouldin (0.685)",
+    "metrics": {
+      "silhouette": 0.522,
+      "davies_bouldin": 0.685,
+      "calinski_harabasz": 11787
+    }
+  },
+  "dataset_02": {
+    "best_algorithm": "Agglomerative Clustering",
+    "best_algorithm_explanation": "Agglomerative с linkage='average' показал лучший Silhouette (0.420 vs 0.307) и Davies-Bouldin (0.879 vs 1.323). Хотя KMeans лучше по Calinski-Harabasz, первые две метрики считаются более важными для оценки качества кластеризации.",
+    "parameters": {
+      "n_clusters": 2,
+      "linkage": "average"
+    },
+    "selection_criteria": "Максимальный Silhouette Score (0.420) и хороший баланс метрик",
+    "metrics": {
+      "silhouette": 0.42,
+      "davies_bouldin": 0.879,
+      "calinski_harabasz": 395
+    }
+  },
+  "dataset_03": {
+    "best_algorithm": "DBSCAN",
+    "best_algorithm_explanation": "DBSCAN выбран как наиболее подходящий алгоритм для данных с разной плотностью. Несмотря на близкие значения Silhouette (0.318 vs 0.316), DBSCAN способен находить кластеры произвольной формы и разной плотности, что соответствует природе данных.",
+    "parameters": {
+      "eps": 0.8,
+      "min_samples": 3
+    },
+    "selection_criteria": "Алгоритмическая уместность для данных с разной плотностью + хороший Silhouette (0.318)",
+    "metrics": {
+      "silhouette": 0.318,
+      "davies_bouldin": 5.636,
+      "calinski_harabasz": 10,
+      "noise_points": 22,
+      "noise_ratio": 0.0015
+    }
+  }
+}
