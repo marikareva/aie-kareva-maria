@@ -16,9 +16,18 @@
     "optimizer": "Adam",
     "learning_rate": 0.001,
     "batch_size": 64,
-    "num_epochs": 16,
+    "num_epochs": 17,
     "early_stopping_patience": 5,
-    "best_val_accuracy": 0.5585,
-    "best_val_loss": 1.2807755865097046
+    "best_val_accuracy": 0.5573,
+    "best_val_loss": 1.282324415206909,
+    "test_accuracy": 0.5357,
+    "loss_function": "CrossEntropyLoss",
+    "weight_decay": 0.0,
+    "momentum": null,
+    "betas": [
+      0.9,
+      0.999
+    ],
+    "eps": 1e-08
   }
 }
