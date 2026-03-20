@@ -21,6 +21,7 @@
     "best_val_accuracy": 0.5573,
     "best_val_loss": 1.282324415206909,
     "test_accuracy": 0.5357,
+    "test_loss": 1.7694,
     "loss_function": "CrossEntropyLoss",
     "weight_decay": 0.0,
     "momentum": null,
