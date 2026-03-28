@@ -15,7 +15,10 @@
   },
   "hyperparameters": {
     "optimizer": "Adam",
-    "learning_rate": "0.0005(layer4),0.001(fc)",
+    "learning_rate": {
+      "layer4": 0.0005,
+      "fc": 0.001
+    },
     "batch_size": 64,
     "epochs_trained": 8,
     "loss_function": "CrossEntropyLoss",
@@ -29,11 +32,11 @@
     "dropout": "N/A"
   },
   "results": {
-    "best_val_accuracy": 94.9,
-    "best_val_accuracy_epoch": 6,
-    "test_accuracy": 93.125,
-    "train_loss_final": 0.05546556631960566,
-    "val_loss_final": 0.21898108936147764
+    "best_val_accuracy": 95.5,
+    "best_val_accuracy_epoch": 3,
+    "test_accuracy": 93.85,
+    "train_loss_final": 0.0057250386162195355,
+    "val_loss_final": 0.1474361892323941
   },
   "data": {
     "dataset_name": "STL10",
@@ -50,7 +53,7 @@
   "experiment": {
     "seed": 42,
     "device": "cuda",
-    "date": "2026-03-26 08:20:57",
-    "notes": "Best model from experiments C1-C4. C4: 94.90% val, 93.12% test"
+    "date": "2026-03-28 21:18:44",
+    "notes": "Best model from experiments C1-C4. C4: 95.50% val, 93.85% test"
   }
 }
