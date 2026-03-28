@@ -79,7 +79,8 @@
 - Кривые лучшего прогона классификации: `aie-kareva-maria/homeworks/HW10-11/artifacts/figures/classification_curves_best.png`
 - Сравнение C1-C4: `aie-kareva-maria/homeworks/HW10-11/artifacts/figures/classification_compare.png`
 - Визуализация аугментаций: `aie-kareva-maria/homeworks/HW10-11/artifacts/figures/augmentations_preview.png`
-- Визуализации второй части: `aie-kareva-maria/homeworks/HW10-11/artifacts/figures/...`
+- Визуализация детекции (V1 и V2): `aie-kareva-maria/homeworks/HW10-11/artifacts/figures/detection_examples.png`
+- Метрики детекции: `aie-kareva-maria/homeworks/HW10-11/artifacts/figures/detection_metrics.png`
 
 Короткая сводка (6-10 строк):
 
