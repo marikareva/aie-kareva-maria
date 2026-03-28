@@ -7,7 +7,7 @@
   "batch_size": 64,
   "learning_rate": 0.001,
   "num_epochs": 100,
-  "best_val_loss": 0.18570802532709563,
+  "best_val_loss": 0.1230324672964903,
   "seed": 42,
   "feature_cols": [
     "lag_1",
@@ -29,5 +29,10 @@
   "device": "cuda",
   "optimizer": "Adam",
   "loss_function": "MSELoss",
-  "model_type": "GRUForecaster"
+  "model_type": "GRUForecaster",
+  "scaler": "StandardScaler",
+  "normalization": {
+    "method": "StandardScaler",
+    "fitted_on": "train_only"
+  }
 }
