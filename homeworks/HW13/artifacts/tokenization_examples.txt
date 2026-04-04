@@ -1,0 +1,26 @@
+ПРИМЕРЫ ТОКЕНИЗАЦИИ ДЛЯ BERT
+Пример 1:
+Текст: i didnt feel humiliated
+Токены: ['i', 'didn', '##t', 'feel', 'humiliated']
+input_ids: [101, 1045, 2134, 2102, 2514, 26608, 102]
+attention_mask: [1, 1, 1, 1, 1, 1, 1]
+Пример 2:
+Текст: i can go from feeling so hopeless to so damned hopeful just from being around someone who cares and is awake
+Токены: ['i', 'can', 'go', 'from', 'feeling', 'so', 'hopeless', 'to', 'so', 'damned', 'hopeful', 'just', 'from', 'being', 'around', 'someone', 'who', 'cares', 'and', 'is', 'awake']
+input_ids: [101, 1045, 2064, 2175, 2013, 3110, 2061, 20625, 2000, 2061, 9636, 17772, 2074, 2013, 2108, 2105, 2619, 2040, 14977, 1998, 2003, 8300, 102]
+attention_mask: [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1]
+Пример 3:
+Текст: im grabbing a minute to post i feel greedy wrong
+Токены: ['im', 'grabbing', 'a', 'minute', 'to', 'post', 'i', 'feel', 'greedy', 'wrong']
+input_ids: [101, 10047, 9775, 1037, 3371, 2000, 2695, 1045, 2514, 20505, 3308, 102]
+attention_mask: [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1]
+Пример 4:
+Текст: I am feeling very happy today!
+Токены: ['i', 'am', 'feeling', 'very', 'happy', 'today', '!']
+input_ids: [101, 1045, 2572, 3110, 2200, 3407, 2651, 999, 102]
+attention_mask: [1, 1, 1, 1, 1, 1, 1, 1, 1]
+Пример 5:
+Текст: This is a longer sentence to demonstrate padding and truncation in action.
+Токены: ['this', 'is', 'a', 'longer', 'sentence', 'to', 'demonstrate', 'pad', '##ding', 'and', 'tr', '##un', '##cation', 'in', 'action', '.']
+input_ids: [101, 2023, 2003, 1037, 2936, 6251, 2000, 10580, 11687, 4667, 1998, 19817, 4609, 10719, 1999, 2895, 1012, 102]
+attention_mask: [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1]
