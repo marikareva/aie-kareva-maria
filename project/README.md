@@ -22,31 +22,39 @@
 
 # 2. Структура проекта
 
+```text
 project/
-├── requirements.txt
-├── Dockerfile
-├── .dockerignore
-├── report.md
-├── self-checklist.md
+├── requirements.txt          # зависимости проекта
+├── Dockerfile                # Docker-образ
+├── .dockerignore             # исключения для Docker
+├── report.md                 # отчёт по проекту
+├── self-checklist.md         # чеклист самопроверки
+│
 ├── notebooks/
-│   └── exp01_eda.ipynb
+│   └── exp01_eda.ipynb       # EDA и эксперименты
+│
 ├── src/
-│   ├── eda_and_train.py
+│   ├── eda_and_train.py      # генерация данных и обучение модели
 │   └── app/
-│       └── api.py
+│       └── api.py            # FastAPI-сервис
+│
 ├── data/
-│   └── flights.csv
+│   └── flights.csv           # синтетический датасет
+│
 ├── configs/
 │   ├── .env.example
 │   └── config.json
+│
 ├── tests/
 │   ├── test_api.py
 │   └── test_data_loading.py
+│
 └── artifacts/
     ├── model.pkl
     ├── feature_names.pkl
     ├── metrics.pkl
     └── eda_plots.png
+```
 
 ---
 
